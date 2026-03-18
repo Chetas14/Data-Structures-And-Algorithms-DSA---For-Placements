@@ -1,0 +1,11 @@
+​LeetCode 283: Move Zeroes
+​Goal: Move all zeros in an array to the end while maintaining the relative order of the non-zero elements. This must be done in-place.
+​Approach: Two-Pointer (Optimal)
+​We use two pointers, i and j.
+​i (The Explorer): Iterates through the entire array to find non-zero elements.
+​j (The Anchor): Keeps track of the position where the next non-zero element should be placed.
+​Whenever we find a non-zero element at nums[i], we swap it with the element at nums[j] and increment j. This effectively "pushes" the zeros to the right and "pulls" the numbers to the left.
+​Efficiency
+​Time Complexity: O(n), where n is the number of elements. We traverse the array exactly once.
+​Space Complexity: O(1), as we do not use any extra data structures; we modify the input array in place.
+​
